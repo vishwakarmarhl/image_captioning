@@ -1,18 +1,21 @@
+import copy
+import json
 import os
+
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import cPickle as pickle
-import copy
-import json
 from tqdm import tqdm
 
-from utils.nn import NN
+
+import six.moves.cPickle as pickle
 from utils.coco.coco import COCO
 from utils.coco.pycocoevalcap.eval import COCOEvalCap
-from utils.misc import ImageLoader, CaptionData, TopN
+from utils.misc import CaptionData, ImageLoader, TopN
+from utils.nn import NN
+
 
 class BaseModel(object):
     def __init__(self, config):
@@ -136,14 +139,15 @@ class BaseModel(object):
                 # Save the result in an image file
                 image_file = batch[l]
                 image_name = image_file.split(os.sep)[-1]
-                image_name = os.path.splitext(image_name)[0]
+                image_name = os.path.basename(os.path.splitext(image_name)[0])
                 img = mpimg.imread(image_file)
                 plt.imshow(img)
                 plt.axis('off')
                 plt.title(caption)
+                print('> Saving Captions: ',image_file)
                 plt.savefig(os.path.join(config.test_result_dir,
                                          image_name+'_result.jpg'))
-
+                
         # Save the captions to a file
         results = pd.DataFrame({'image_files':test_data.image_files,
                                 'caption':captions,
@@ -260,7 +264,7 @@ class BaseModel(object):
                                      str(global_step)+".npy")
 
         print("Loading the model from %s..." %save_path)
-        data_dict = np.load(save_path).item()
+        data_dict = np.load(save_path, encoding='latin1').item()
         count = 0
         for v in tqdm(tf.global_variables()):
             if v.name in data_dict.keys():
@@ -271,11 +275,11 @@ class BaseModel(object):
     def load_cnn(self, session, data_path, ignore_missing=True):
         """ Load a pretrained CNN model. """
         print("Loading the CNN from %s..." %data_path)
-        data_dict = np.load(data_path).item()
+        data_dict = np.load(data_path, encoding='latin1').item()
         count = 0
         for op_name in tqdm(data_dict):
             with tf.variable_scope(op_name, reuse = True):
-                for param_name, data in data_dict[op_name].iteritems():
+                for param_name, data in data_dict[op_name].items():
                     try:
                         var = tf.get_variable(param_name)
                         session.run(var.assign(data))
