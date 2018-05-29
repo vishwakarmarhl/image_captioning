@@ -1,33 +1,34 @@
 ,caption,image_files,prob
-0,a red double decker bus driving down a street.,./test/images/1.jpg,0.0027353407140652958
-1,a group of people sitting at a table.,./test/images/2.jpg,0.001146676178886833
-2,a man riding a wave on a bat.,./test/images/3.jpg,0.006607095657158975
-3,a group of people sitting on a bench.,./test/images/ab.jpg,0.0007601638023480332
-4,a living room with a couch and a tv.,./test/images/ah1.jpg,0.0001380752345810019
-5,a living room with a table and a tv.,./test/images/ah2.jpg,2.5581675895616386e-05
-6,a laptop computer sitting on top of a table.,./test/images/ah3.jpg,0.0011150880133472035
-7,a living room with a couch and a table.,./test/images/ah4.jpg,6.468094736223626e-05
-8,a living room with a couch and a tv.,./test/images/ah5.jpg,5.2441402749003054e-05
-9,a small room with a couch and a couch.,./test/images/ah6.jpg,6.236160093920848e-06
-10,a laptop computer sitting on top of a table.,./test/images/ah7.jpg,0.007192068823665186
-11,a laptop computer sitting on top of a desk.,./test/images/ah8.jpg,0.004762294614959973
-12,a man riding a skateboard down a street.,./test/images/b1.jpg,0.007186180229190571
-13,a bike parked on the side of a street.,./test/images/b2.jpg,0.00032999697137632106
-14,a man riding a bike down a street.,./test/images/b3.jpg,0.004848344435727686
-15,a man riding a bike down a street.,./test/images/b4.jpg,0.005541176510364329
-16,a man riding a bike down a street.,./test/images/b5.jpg,0.0058677898040418565
-17,a man riding a motorcycle down a street.,./test/images/boker.jpeg,0.005726859551103934
-18,a group of people sitting at a table.,./test/images/cafe1.jpg,0.0014629065091348484
-19,a man is standing in a kitchen with luggage.,./test/images/cafe2.jpg,8.668140185480445e-07
-20,a man riding a bike down a street.,./test/images/cd.jpg,0.0026367984870285977
-21,a man holding a frisbee in a field.,./test/images/fieldtrip.jpg,0.0005166815769371511
-22,a woman sitting on a bike with a bike.,./test/images/girlbike.jpeg,0.0001302541365096311
-23,a man sitting on a couch with a laptop.,./test/images/lap1.jpg,0.0007326910930161088
-24,a man sitting on a couch with a laptop.,./test/images/lap2.jpg,0.0005461130508777274
-25,a man sitting on a couch with a laptop.,./test/images/lap3.jpg,0.0007647349799942205
-26,a man sitting on a couch with a laptop.,./test/images/lap4.jpg,0.00046461055083308657
-27,a man sitting on a couch with a laptop.,./test/images/lap5.jpg,0.0005345132487241802
-28,a man riding a skateboard down a street.,./test/images/m_cellphone.jpg,0.001643267277229128
-29,a group of people standing next to each other.,./test/images/norwegian.jpg,0.000579429808521709
-30,a man riding a motorcycle down a road.,./test/images/ocean-boker.jpg,0.0005448586823261489
-31,a man riding a wave on a bat.,./test/images/water-rider-800.jpg,0.00945187515234604
+0,a red double decker bus driving down the street.,./test/images/1.jpg,0.0052827588391125896
+1,a group of people sitting on a bench.,./test/images/2.jpg,0.004990880865793013
+2,a surfer rides a wave in the ocean.,./test/images/3.jpg,0.016512081052502948
+3,a group of people sitting on a bench.,./test/images/ab.jpg,0.005225231805454048
+4,a living room filled with furniture and a window.,./test/images/ah1.jpg,0.00033920157943727677
+5,a bathroom with a toilet and sink.,./test/images/ah2.jpg,0.0008568534843736417
+6,a white plate with a sandwich on it.,./test/images/ah3.jpg,0.0001569178432592162
+7,a man standing in a room with a laptop.,./test/images/ah4.jpg,0.00015111628412393783
+8,a kitchen with a sink and a microwave.,./test/images/ah5.jpg,5.229621968174452e-05
+9,a bathroom with a toilet and a sink.,./test/images/ah6.jpg,0.000887760825560462
+10,a laptop computer sitting on top of a desk.,./test/images/ah7.jpg,0.005293592948690087
+11,a laptop computer sitting on top of a desk.,./test/images/ah8.jpg,0.0044134919283615945
+12,a man riding a skateboard down a ramp.,./test/images/b1.jpg,0.0034208684631556194
+13,a bicycle is parked on the sidewalk.,./test/images/b2.jpg,0.00019722747883895656
+14,a man riding a bike down a street.,./test/images/b3.jpg,0.004544660079943805
+15,a man riding a bike down a street.,./test/images/b4.jpg,0.00600612299004345
+16,a man riding a bike down the street.,./test/images/b5.jpg,0.00360683266035595
+17,a man riding a bike down a street.,./test/images/b6.jpg,0.008028501668561654
+18,a man riding a bike down a street.,./test/images/boker.jpeg,0.011090205572915573
+19,a group of people sitting around a table.,./test/images/cafe1.jpg,0.0019819542390053257
+20,a group of people standing around a kitchen.,./test/images/cafe2.jpg,4.987165010159772e-05
+21,a man riding a bike down a street.,./test/images/cd.jpg,0.004634737347983217
+22,a man is standing in the grass holding a frisbee.,./test/images/fieldtrip.jpg,7.06201667302379e-05
+23,a man rides a bike down a street.,./test/images/girlbike.jpeg,0.001552999542228504
+24,a man sitting on a couch using a laptop computer.,./test/images/lap1.jpg,0.0009492288349364979
+25,a man sitting at a desk with a laptop.,./test/images/lap2.jpg,0.0003642066648295016
+26,a man sitting on a couch with a laptop.,./test/images/lap3.jpg,0.0012817012414002705
+27,a man is standing in front of a window.,./test/images/lap4.jpg,0.0005751456241540498
+28,a man is standing in front of a window.,./test/images/lap5.jpg,0.00046658226904749457
+29,a man riding a skateboard down a sidewalk.,./test/images/m_cellphone.jpg,0.0020274435918730257
+30,a group of people walking down a street.,./test/images/norwegian.jpg,0.0017126877431097632
+31,a man riding a bike down a dirt road.,./test/images/ocean-boker.jpg,0.000797071353115421
+32,a man riding a wave on top of a surfboard.,./test/images/water-rider-800.jpg,0.017178044279173587

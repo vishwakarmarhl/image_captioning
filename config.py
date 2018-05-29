@@ -25,7 +25,7 @@ class Config(object):
         self.attention_loss_factor = 0.01
 
         # about the optimization
-        self.num_epochs = 100
+        self.num_epochs = 5
         self.batch_size = 32
         self.optimizer = 'Adam'    # 'Adam', 'RMSProp', 'Momentum' or 'SGD'
         self.initial_learning_rate = 0.0001
@@ -41,7 +41,7 @@ class Config(object):
         self.epsilon = 1e-6
 
         # about the saver
-        self.save_period = 1000
+        self.save_period = 100
         self.save_dir = './models/'
         self.summary_dir = './summary/'
 
@@ -54,6 +54,7 @@ class Config(object):
         self.train_caption_file = './train/captions_train2014.json'
         self.temp_annotation_file = './train/anns.csv'
         self.temp_data_file = './train/data.npy'
+        self.train_data_count_limit = 200
 
         # about the evaluation
         self.eval_image_dir = './val/images/'

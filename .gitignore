@@ -39,6 +39,7 @@ val/images/*.jpg
 *.npy
 
 # TF Summary files 
+summary/*
 
 *.KARMA
 *.gpu-instance-tf

@@ -129,6 +129,22 @@ def prepare_train_data(config):
     print("Number of captions = %d" %(len(captions)))
 
     print("Building the dataset...")
+    if(config.train_data_count_limit > 0):
+        print("-----------------------------------------------")
+        print("Restricting Sz:\t",config.train_data_count_limit)
+        print("Batch Sz:\t",config.batch_size)
+        image_ids = image_ids[0: config.train_data_count_limit]
+        image_files = image_files[0: config.train_data_count_limit]
+        word_idxs = word_idxs[0: config.train_data_count_limit]
+        masks = masks[0: config.train_data_count_limit]
+        """ Dump the image paths to a file """
+        filepath = 'train_images.csv'
+        with open(filepath, 'w') as file_handler:
+            for i in range(0,config.train_data_count_limit):
+                file_handler.write("{}\n".format(image_files[i]))
+        #print(image_files)
+        print("-----------------------------------------------")
+
     dataset = DataSet(image_ids,
                       image_files,
                       config.batch_size,

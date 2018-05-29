@@ -2,7 +2,6 @@ import copy
 import json
 import os
 
-import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -94,17 +93,20 @@ class BaseModel(object):
                     image_file = batch[l]
                     image_name = image_file.split(os.sep)[-1]
                     image_name = os.path.splitext(image_name)[0]
-                    img = mpimg.imread(image_file)
-                    plt.imshow(img)
-                    plt.axis('off')
-                    plt.title(caption)
-                    plt.savefig(os.path.join(config.eval_result_dir,
-                                             image_name+'_result.jpg'))
+                    #img = plt.imread(image_file)
+                    #plt.imshow(img)
+                    #plt.axis('off')
+                    #plt.title(caption)
+                    #plt.savefig(os.path.join(config.eval_result_dir,
+                    #                         image_name+'_result.jpg'))
 
-        fp = open(config.eval_result_file, 'wb')
-        json.dump(results, fp)
-        fp.close()
+        print("Size of dump: ", len(results))
+        if(len(results)>0):
+            fp = open(config.eval_result_file, 'w')
+            json.dump(results, fp)
+            fp.close()
 
+        print("Evaluate Captions.")
         # Evaluate these captions
         eval_result_coco = eval_gt_coco.loadRes(config.eval_result_file)
         scorer = COCOEvalCap(eval_gt_coco, eval_result_coco)
@@ -140,7 +142,7 @@ class BaseModel(object):
                 image_file = batch[l]
                 image_name = image_file.split(os.sep)[-1]
                 image_name = os.path.basename(os.path.splitext(image_name)[0])
-                img = mpimg.imread(image_file)
+                img = plt.imread(image_file)
                 plt.imshow(img)
                 plt.axis('off')
                 plt.title(caption)
