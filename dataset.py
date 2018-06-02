@@ -173,6 +173,19 @@ def prepare_eval_data(config):
     print("Number of words = %d" %(vocabulary.size))
 
     print("Building the dataset...")
+    if(config.eval_data_count_limit > 0):
+        print("-----------------------------------------------")
+        print("Restricting Sz:\t",config.eval_data_count_limit)
+        print("Batch Sz:\t",config.batch_size)
+        image_ids = image_ids[0: config.eval_data_count_limit]
+        image_files = image_files[0: config.eval_data_count_limit]
+        """ Dump the image paths to a file """
+        filepath = 'eval_images.csv'
+        with open(filepath, 'w') as file_handler:
+            for i in range(0,config.eval_data_count_limit):
+                file_handler.write("{}\n".format(image_files[i]))
+        #print(image_files)
+        print("-----------------------------------------------")
     dataset = DataSet(image_ids, image_files, config.batch_size)
     print("Dataset built.")
     return coco, dataset, vocabulary

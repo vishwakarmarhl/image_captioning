@@ -55,10 +55,6 @@ class CaptionData(object):
         assert isinstance(other, CaptionData)
         return self.score < other.score
 
-    def __eq__(self, other):
-        assert isinstance(other, CaptionData)
-        return self.score == other.score
-
 class TopN(object):
     def __init__(self, n):
         self._n = n

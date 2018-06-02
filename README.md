@@ -25,7 +25,7 @@ python main.py --phase=train --load_cnn --cnn_model_file=vgg16_no_fc.npy [--trai
 ```
 Turn on `--train_cnn` if you want to jointly train the CNN and RNN parts. Otherwise, only the RNN part is trained. The checkpoints will be saved in the folder `models`. If you want to resume the training from a checkpoint, run a command like this:
 ```shell
-python main.py --phase=train  --load --model_file='./models/1829999.npy' [--train_cnn]
+python main.py --phase=train  --load --model_file=models/1829999.npy [--train_cnn]
 ```
 To monitor the progress of training, run the following command:
 ```shell
@@ -35,7 +35,7 @@ tensorboard --logdir='./summary/'
 * **Evaluation:**
 To evaluate a trained model using the COCO val2014 data, run a command like this:
 ```shell
-python main.py --phase=eval --model_file='./models/10999.npy' --beam_size=3
+python main.py --phase=eval --model_file=models/1829999.npy --beam_size=3
 ```
 The result will be shown in stdout. Furthermore, the generated captions will be saved in the file `val/results.json`.
 

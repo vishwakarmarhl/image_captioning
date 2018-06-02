@@ -22,11 +22,13 @@ class COCOEvalCap:
     def evaluate(self):
         imgIds = self.params['image_id']
         # imgIds = self.coco.getImgIds()
+        print(self.cocoRes.imgToAnns.keys())
         gts = {}
         res = {}
         for imgId in imgIds:
-            gts[imgId] = self.coco.imgToAnns[imgId]
-            res[imgId] = self.cocoRes.imgToAnns[imgId]
+            if(imgId in self.cocoRes.imgToAnns.keys()):
+                gts[imgId] = self.coco.imgToAnns[imgId]
+                res[imgId] = self.cocoRes.imgToAnns[imgId]
 
         # =================================================
         # Set up scorers
@@ -41,10 +43,10 @@ class COCOEvalCap:
         # =================================================
         print('setting up scorers...')
         scorers = [
-            (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
-            (Meteor(),"METEOR"),
-            (Rouge(), "ROUGE_L"),
-            (Cider(), "CIDEr")
+            (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"])
+            #(Meteor(),"METEOR"),
+            #(Rouge(), "ROUGE_L"),
+            #(Cider(), "CIDEr")
         ]
 
         # =================================================

@@ -15,6 +15,16 @@ from utils.coco.pycocoevalcap.eval import COCOEvalCap
 from utils.misc import CaptionData, ImageLoader, TopN
 from utils.nn import NN
 
+class MyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        else:
+            return super(MyEncoder, self).default(obj)
 
 class BaseModel(object):
     def __init__(self, config):
@@ -63,6 +73,10 @@ class BaseModel(object):
         train_writer.close()
         print("Training complete.")
 
+    def default(o):
+        if isinstance(o, np.int64): return int(o)  
+        raise TypeError
+        
     def eval(self, sess, eval_gt_coco, eval_data, vocabulary):
         """ Evaluate the model using the COCO val2014 data. """
         print("Evaluating the model ...")
@@ -84,7 +98,7 @@ class BaseModel(object):
                 word_idxs = caption_data[l][0].sentence
                 score = caption_data[l][0].score
                 caption = vocabulary.get_sentence(word_idxs)
-                results.append({'image_id': eval_data.image_ids[idx],
+                results.append({'image_id': int(eval_data.image_ids[idx]),
                                 'caption': caption})
                 idx += 1
 
@@ -93,18 +107,18 @@ class BaseModel(object):
                     image_file = batch[l]
                     image_name = image_file.split(os.sep)[-1]
                     image_name = os.path.splitext(image_name)[0]
-                    #img = plt.imread(image_file)
-                    #plt.imshow(img)
-                    #plt.axis('off')
-                    #plt.title(caption)
-                    #plt.savefig(os.path.join(config.eval_result_dir,
-                    #                         image_name+'_result.jpg'))
+                    img = plt.imread(image_file)
+                    plt.imshow(img)
+                    plt.axis('off')
+                    plt.title(caption)
+                    plt.savefig(os.path.join(config.eval_result_dir,
+                                             image_name+'_result.jpg'))
 
-        print("Size of dump: ", len(results))
-        if(len(results)>0):
-            fp = open(config.eval_result_file, 'w')
-            json.dump(results, fp)
-            fp.close()
+        print("Size of result dump: ", len(results))
+        fp = open(config.eval_result_file, 'w')
+        json.dump(results, fp)
+        fp.close()
+        print("Captions written to:", config.eval_result_file)
 
         print("Evaluate Captions.")
         # Evaluate these captions
@@ -139,16 +153,17 @@ class BaseModel(object):
                 scores.append(score)
 
                 # Save the result in an image file
-                image_file = batch[l]
-                image_name = image_file.split(os.sep)[-1]
-                image_name = os.path.basename(os.path.splitext(image_name)[0])
-                img = plt.imread(image_file)
-                plt.imshow(img)
-                plt.axis('off')
-                plt.title(caption)
-                print('> Saving Captions: ',image_file)
-                plt.savefig(os.path.join(config.test_result_dir,
-                                         image_name+'_result.jpg'))
+                if config.save_test_result_as_image:
+                    image_file = batch[l]
+                    image_name = image_file.split(os.sep)[-1]
+                    image_name = os.path.basename(os.path.splitext(image_name)[0])
+                    img = plt.imread(image_file)
+                    plt.imshow(img)
+                    plt.axis('off')
+                    plt.title(caption)
+                    print('> Saving Captions: ',image_file)
+                    plt.savefig(os.path.join(config.test_result_dir,
+                                             image_name+'_result.jpg'))
                 
         # Save the captions to a file
         results = pd.DataFrame({'image_files':test_data.image_files,
