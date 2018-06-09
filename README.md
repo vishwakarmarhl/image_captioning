@@ -127,15 +127,15 @@ Train & outdoors           |
 ### References
 * [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](https://arxiv.org/abs/1502.03044). Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio. ICML 2015.
 * [Show and Tell: A Neural Image Caption Generator](https://arxiv.org/abs/1411.4555).By Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan ICML 2015
-* [The original implementation in Theano](https://github.com/kelvinxu/arctic-captions)
-* [An earlier implementation in Tensorflow](https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow)
 * [Microsoft COCO dataset](http://mscoco.org/)
 * [Blogpost describing soft attention in detail](https://blog.heuritech.com/2016/01/20/attention-mechanism/)
 * [Lecture 8 on RNN, ](http://www.di.ens.fr/~lelarge/dldiy/slides/lecture_8/index.html#1)
-* Code
+* Implementations
+  * [The original implementation in Theano](https://github.com/kelvinxu/arctic-captions)
   * [Neural Machine Translation (seq2seq) Tutorial](https://github.com/tensorflow/nmt)
   * [Neural Image Captioning by fregu856](https://github.com/fregu856/CS224n_project)
   * [Neural Image captioning by DeepRNN ](https://github.com/DeepRNN/image_captioning)
+  * [An earlier implementation in Tensorflow](https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow)
   * [LSTM barebone numpy implementation](https://github.com/nicodjimenez/lstm)
 
 
