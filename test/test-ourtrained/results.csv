@@ -1,0 +1,36 @@
+,caption,image_files,prob
+0,a plate of food and a cup of coffee.,./test/images/IMG_20171223_220529.jpg,0.0004695458364018173
+1,a plate of food and a cup of coffee.,./test/images/IMG_20171231_175410.jpg,0.0012277482943217793
+2,a plate of food with broccoli and broccoli.,./test/images/IMG_20180127_213505527.jpg,0.0008417043729546377
+3,a table with a table and a table.,./test/images/IMG_20180217_105342006_LL.jpg,1.3893640199468178e-05
+4,a table topped with plates of food on a table.,./test/images/IMG_20180217_105518879_LL.jpg,0.0001353325653304611
+5,a man standing in a room with a laptop.,./test/images/IMG_20180317_180624647.jpg,0.00015111573279776535
+6,a living room filled with furniture and a window.,./test/images/IMG_20180317_180647434.jpg,0.0003392008205188938
+7,a kitchen with a sink and a microwave.,./test/images/IMG_20180317_180708236.jpg,5.2296049195336195e-05
+8,a bathroom with a toilet and a sink.,./test/images/IMG_20180317_180712123.jpg,0.0008877637596939127
+9,a laptop computer sitting on top of a desk.,./test/images/IMG_20180317_180749817.jpg,0.004413508955236763
+10,a man riding a motorcycle down a road.,./test/images/IMG_20180414_123913672.jpg,0.003310457747980956
+11,a group of people standing around a table.,./test/images/IMG_20180419_161029170.jpg,0.0006460581530966252
+12,a blue and white bus is parked in front of a building.,./test/images/IMG_20180419_174201561.jpg,2.847573818116782e-05
+13,a blue and white train on a track.,./test/images/IMG_20180419_174214280.jpg,0.0002658680767438668
+14,a red stop sign on the side of a road.,./test/images/IMG_20180419_174752831.jpg,0.0007012062675600697
+15,a group of people walking around a park.,./test/images/IMG_20180507_113944426.jpg,6.038047897652476e-05
+16,a group of people riding motorcycles down a street.,./test/images/IMG_20180507_124057152.jpg,0.0004476793176213144
+17,a group of people walking down a street.,./test/images/IMG_20180507_124103529.jpg,0.0008799967991483668
+18,a man riding a bike down a street.,./test/images/IMG_20180509_095424266.jpg,0.0011128596008980487
+19,a man riding a skateboard down a street.,./test/images/IMG_20180509_123752026.jpg,0.003495295543083218
+20,a train traveling down tracks next to a forest.,./test/images/IMG_20180512_184518035.jpg,0.0002571235767554325
+21,a group of people sitting around a table.,./test/images/IMG_20180523_122851293.jpg,0.0009602546878735336
+22,a man with a dog and a dog.,./test/images/IMG_20180523_125400217.jpg,6.811444757273718e-05
+23,a man is sitting on the ground with a dog.,./test/images/IMG_20180523_125552480.jpg,2.8179937909887724e-05
+24,a bike parked on the side of a road.,./test/images/IMG_20180601_154633912.jpg,0.0014973042678275174
+25,a bicycle is parked on the side of the road.,./test/images/IMG_20180601_154643968.jpg,0.00027825954318632545
+26,a group of people sitting on a bench.,./test/images/IMG_20180601_155506869.jpg,0.0010850464207775251
+27,a group of people sitting around a bench.,./test/images/IMG_20180601_192320769.jpg,0.0017044274862578702
+28,a group of people standing in a field.,./test/images/IMG_20180601_192620720.jpg,0.0007572652255213672
+29,a man standing in front of a building.,./test/images/IMG_20180601_223312580_LL.jpg,2.2429697970548672e-05
+30,a group of people sitting around a table.,./test/images/IMG_20180601_224835501_LL.jpg,0.00425253968484084
+31,a plate of food with meat and vegetables.,./test/images/IMG_20180602_174445217.jpg,0.001838029730026516
+32,a man walking down a street with an umbrella.,./test/images/IMG_20180602_180229588.jpg,0.0003173743467383762
+33,a vase of flowers sitting on top of a table.,./test/images/IMG_20180602_180435687.jpg,0.0022977148754588575
+34,a man sitting on a couch using a laptop computer.,./test/images/lap1.jpg,0.0009492288594671782

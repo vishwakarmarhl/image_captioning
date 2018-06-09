@@ -1,0 +1,29 @@
+Building the vocabulary...
+Vocabulary built.
+Number of words = 5000
+Building the dataset...
+Dataset built.
+Building the CNN...
+CNN built.
+Building the RNN...
+RNN built.
+Loading the model from models\1829999.npy...
+47 tensors loaded.
+Testing the model ...
+> Saving Captions:  ./test/images/girlbike.jpeg
+> Saving Captions:  ./test/images/IMG_20171223_220529.jpg
+> Saving Captions:  ./test/images/IMG_20171231_175410.jpg
+> Saving Captions:  ./test/images/IMG_20180127_213505527.jpg
+> Saving Captions:  ./test/images/IMG_20180217_105518879_LL.jpg
+> Saving Captions:  ./test/images/IMG_20180317_180624647.jpg
+> Saving Captions:  ./test/images/IMG_20180317_180647434.jpg
+> Saving Captions:  ./test/images/IMG_20180317_180712123.jpg
+> Saving Captions:  ./test/images/IMG_20180317_180749817.jpg
+> Saving Captions:  ./test/images/IMG_20180419_174201561.jpg
+> Saving Captions:  ./test/images/IMG_20180419_174214280.jpg
+> Saving Captions:  ./test/images/IMG_20180523_125400217.jpg
+> Saving Captions:  ./test/images/IMG_20180523_125552480.jpg
+> Saving Captions:  ./test/images/IMG_20180601_154643968.jpg
+> Saving Captions:  ./test/images/IMG_20180601_155506869.jpg
+> Saving Captions:  ./test/images/IMG_20180602_180435687.jpg
+Testing complete.

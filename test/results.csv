@@ -1,34 +1,15 @@
 ,caption,image_files,prob
-0,a red double decker bus driving down the street.,./test/images/1.jpg,0.0052827588391125896
-1,a group of people sitting on a bench.,./test/images/2.jpg,0.004990880865793013
-2,a surfer rides a wave in the ocean.,./test/images/3.jpg,0.016512081052502948
-3,a group of people sitting on a bench.,./test/images/ab.jpg,0.005225231805454048
-4,a living room filled with furniture and a window.,./test/images/ah1.jpg,0.00033920157943727677
-5,a bathroom with a toilet and sink.,./test/images/ah2.jpg,0.0008568534843736417
-6,a white plate with a sandwich on it.,./test/images/ah3.jpg,0.0001569178432592162
-7,a man standing in a room with a laptop.,./test/images/ah4.jpg,0.00015111628412393783
-8,a kitchen with a sink and a microwave.,./test/images/ah5.jpg,5.229621968174452e-05
-9,a bathroom with a toilet and a sink.,./test/images/ah6.jpg,0.000887760825560462
-10,a laptop computer sitting on top of a desk.,./test/images/ah7.jpg,0.005293592948690087
-11,a laptop computer sitting on top of a desk.,./test/images/ah8.jpg,0.0044134919283615945
-12,a man riding a skateboard down a ramp.,./test/images/b1.jpg,0.0034208684631556194
-13,a bicycle is parked on the sidewalk.,./test/images/b2.jpg,0.00019722747883895656
-14,a man riding a bike down a street.,./test/images/b3.jpg,0.004544660079943805
-15,a man riding a bike down a street.,./test/images/b4.jpg,0.00600612299004345
-16,a man riding a bike down the street.,./test/images/b5.jpg,0.00360683266035595
-17,a man riding a bike down a street.,./test/images/b6.jpg,0.008028501668561654
-18,a man riding a bike down a street.,./test/images/boker.jpeg,0.011090205572915573
-19,a group of people sitting around a table.,./test/images/cafe1.jpg,0.0019819542390053257
-20,a group of people standing around a kitchen.,./test/images/cafe2.jpg,4.987165010159772e-05
-21,a man riding a bike down a street.,./test/images/cd.jpg,0.004634737347983217
-22,a man is standing in the grass holding a frisbee.,./test/images/fieldtrip.jpg,7.06201667302379e-05
-23,a man rides a bike down a street.,./test/images/girlbike.jpeg,0.001552999542228504
-24,a man sitting on a couch using a laptop computer.,./test/images/lap1.jpg,0.0009492288349364979
-25,a man sitting at a desk with a laptop.,./test/images/lap2.jpg,0.0003642066648295016
-26,a man sitting on a couch with a laptop.,./test/images/lap3.jpg,0.0012817012414002705
-27,a man is standing in front of a window.,./test/images/lap4.jpg,0.0005751456241540498
-28,a man is standing in front of a window.,./test/images/lap5.jpg,0.00046658226904749457
-29,a man riding a skateboard down a sidewalk.,./test/images/m_cellphone.jpg,0.0020274435918730257
-30,a group of people walking down a street.,./test/images/norwegian.jpg,0.0017126877431097632
-31,a man riding a bike down a dirt road.,./test/images/ocean-boker.jpg,0.000797071353115421
-32,a man riding a wave on top of a surfboard.,./test/images/water-rider-800.jpg,0.017178044279173587
+0,a man sitting at a table with a plate of food.,./test/images/34782478_1777274182340434_1654019505149444096_n.jpg,0.004135445522950775
+1,a piece of cake sitting on top of a plate.,./test/images/IMG_20171223_220529.jpg,0.000605914444479057
+2,a plate of food and a cup of coffee.,./test/images/IMG_20171231_175410.jpg,0.0006829945450324914
+3,a table topped with plates of food and a cup of coffee.,./test/images/IMG_20180217_105518879_LL.jpg,4.589495367655356e-05
+4,a living room with a couch and a table.,./test/images/IMG_20180317_180624647.jpg,0.0003639591633200044
+5,a living room filled with furniture and a window.,./test/images/IMG_20180317_180647434.jpg,0.0011353718036805785
+6,a small white bed sitting in a room.,./test/images/IMG_20180317_180712123.jpg,3.987031070598773e-05
+7,a blue and white train sitting on the tracks.,./test/images/IMG_20180419_174201561.jpg,0.00011926329960321379
+8,a man and a dog sitting on a bench.,./test/images/IMG_20180523_125400217.jpg,0.00012036240903642251
+9,a dog laying on the ground next to a dog.,./test/images/IMG_20180523_125552480.jpg,0.0001873901419808056
+10,a bicycle parked on the side of a road.,./test/images/IMG_20180601_154643968.jpg,0.0006492486353267858
+11,a group of people sitting on a bench.,./test/images/IMG_20180601_155506869.jpg,0.0015220549423387885
+12,a vase filled with flowers sitting on top of a table.,./test/images/IMG_20180602_180435687.jpg,0.003975359366103185
+13,a living room filled with furniture and a television.,./test/images/IMG_20180608_161301669.jpg,0.0007350185172139767

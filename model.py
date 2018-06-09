@@ -254,7 +254,9 @@ class CaptionGenerator(BaseModel):
         else:
             num_steps = 1
         last_state = last_memory, last_output
-
+        
+        # Attention probabilities:
+        attention_maps = []
         # Generate the words one by one
         for idx in range(num_steps):
             # Attention mechanism
@@ -262,6 +264,8 @@ class CaptionGenerator(BaseModel):
                 alpha = self.attend(contexts, last_output)
                 context = tf.reduce_sum(contexts*tf.expand_dims(alpha, 2),
                                         axis = 1)
+                print(idx," -> alpha -> ", alpha)
+                attention_maps.append(alpha)
                 if self.is_train:
                     tiled_masks = tf.tile(tf.expand_dims(masks[:, idx], 1),
                                          [1, self.num_ctx])
@@ -334,6 +338,7 @@ class CaptionGenerator(BaseModel):
                        / tf.reduce_sum(masks)
 
         self.contexts = contexts
+        self.attention_maps = attention_maps  # save the attention probs to enable visualization
         if self.is_train:
             self.sentences = sentences
             self.masks = masks

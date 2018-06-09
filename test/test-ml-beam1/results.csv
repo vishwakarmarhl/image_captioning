@@ -1,0 +1,14 @@
+,caption,image_files,prob
+0,a woman riding a bicycle with a bicycle.,./test/images/girlbike.jpeg,0.0004211580097134273
+1,a plate of food with a cup of coffee.,./test/images/IMG_20171223_220529.jpg,3.378124329585048e-05
+2,a plate of food with a cup of coffee.,./test/images/IMG_20171231_175410.jpg,0.00012490795243449016
+3,a table with a plate of food and a cup of coffee.,./test/images/IMG_20180217_105518879_LL.jpg,4.021032544082451e-05
+4,a living room with a couch and a table.,./test/images/IMG_20180317_180624647.jpg,0.00036396075421038596
+5,a living room with a couch and a table.,./test/images/IMG_20180317_180647434.jpg,0.0002939498562147167
+6,a small bed with a blue blanket and a white blanket.,./test/images/IMG_20180317_180712123.jpg,1.518117584734339e-08
+7,a train is parked on the tracks near a building.,./test/images/IMG_20180419_174201561.jpg,3.1861811106884415e-05
+8,a man with a dog sitting on top of a couch.,./test/images/IMG_20180523_125400217.jpg,1.8889355874956716e-05
+9,a dog laying on a leash with a dog.,./test/images/IMG_20180523_125552480.jpg,1.4901263619548512e-05
+10,a bicycle parked on a sidewalk next to a fence.,./test/images/IMG_20180601_154643968.jpg,1.4758861686550641e-05
+11,a man sitting on a bench with a dog.,./test/images/IMG_20180601_155506869.jpg,4.612626095032857e-05
+12,a vase filled with flowers sitting on top of a table.,./test/images/IMG_20180602_180435687.jpg,0.0039753785660817855

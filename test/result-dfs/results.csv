@@ -1,0 +1,14 @@
+,caption,image_files,prob
+0,a woman sitting on a bicycle with a bicycle.,./test/images/girlbike.jpeg,0.00048731755044492415
+1,a piece of cake sitting on top of a plate.,./test/images/IMG_20171223_220529.jpg,0.0006059120810253994
+2,a plate of food sitting on top of a table.,./test/images/IMG_20171231_175410.jpg,0.0016334524791198329
+3,a cup of coffee sitting on top of a table.,./test/images/IMG_20180217_105518879_LL.jpg,0.0002982180443576176
+4,a living room filled with furniture and chairs.,./test/images/IMG_20180317_180624647.jpg,0.0005161204909477348
+5,a living room filled with furniture and a window.,./test/images/IMG_20180317_180647434.jpg,0.0011353771698817217
+6,a bathroom with a toilet and a sink.,./test/images/IMG_20180317_180712123.jpg,0.00031280653540975093
+7,a bus parked in front of a building.,./test/images/IMG_20180419_174201561.jpg,0.0008802546786174806
+8,a man sitting on a bench with a dog.,./test/images/IMG_20180523_125400217.jpg,0.00014324615452851748
+9,a dog laying on the ground next to a dog.,./test/images/IMG_20180523_125552480.jpg,0.00018739005682796094
+10,a bicycle parked on the side of a road.,./test/images/IMG_20180601_154643968.jpg,0.0006492470240161468
+11,a group of people sitting on a bench.,./test/images/IMG_20180601_155506869.jpg,0.0015220530397656864
+12,a vase filled with flowers sitting on top of a table.,./test/images/IMG_20180602_180435687.jpg,0.0039753785660817855

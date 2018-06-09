@@ -42,6 +42,9 @@ class CaptionData(object):
        self.output = output
        self.score = score
 
+    def __repr__(self):
+        return ''.join(["sentence:", ' '.join(str(x) for x in self.sentence), " score:", str(self.score)])
+
     def __cmp__(self, other):
         assert isinstance(other, CaptionData)
         if self.score == other.score:
@@ -50,7 +53,7 @@ class CaptionData(object):
             return -1
         else:
             return 1
-    
+
     def __lt__(self, other):
         assert isinstance(other, CaptionData)
         return self.score < other.score

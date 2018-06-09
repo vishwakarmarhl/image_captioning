@@ -7,14 +7,14 @@ from dataset import prepare_train_data, prepare_eval_data, prepare_test_data
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.flags.DEFINE_string('phase', 'train',
+tf.flags.DEFINE_string('phase', 'test',
                        'The phase can be train, eval or test')
 
 tf.flags.DEFINE_boolean('load', False,
                         'Turn on to load a pretrained model from either \
                         the latest checkpoint or a specified file')
 
-tf.flags.DEFINE_string('model_file', None,
+tf.flags.DEFINE_string('model_file', 'models/1829999.npy',
                        'If sepcified, load a pretrained model from this file')
 
 tf.flags.DEFINE_boolean('load_cnn', False,
